@@ -1,0 +1,59 @@
+.latest-products
+{
+    padding : 0 20px 0 20px;
+}
+.heading
+{
+    margin-bottom : 20px;
+    text-align : center;
+    padding : 20px 20px;
+    background-color : rgb(245, 245, 245);
+}
+.heading p
+{
+    font-size : 25px;
+    font-weight : 450;
+    position : relative;
+    z-index : 2;
+}
+.heading p::after
+{
+    content : '';
+    position : absolute;
+    height : 30px;
+    left : 0;
+    bottom :0;
+    width : 0;
+    background : orange;
+    transition : width 0.5s;
+    z-index : -3;
+}
+.heading p:hover:after
+{
+    width : 100%;
+}
+.product-card
+{
+    box-shadow : 1px 1px 8px rgba(0,0,0,0.3);
+    padding : 20px 10px 20px 10px;
+    border-radius : 10px;
+}
+.products-grid
+{
+    display : grid;
+    grid-template-columns : 1fr 1fr 1fr 1fr;
+    column-gap : 20px;
+    row-gap : 40px;
+}
+.product-image img
+{
+    width : 100%;
+}
+.product-info 
+{
+    line-height : 25px;
+}
+.checked
+{
+    color : orange;
+}
